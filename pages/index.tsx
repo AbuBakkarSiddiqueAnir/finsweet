@@ -1,11 +1,15 @@
 
-import { Navbar } from "@components/index"
+import { Hero, Podcasts, Article } from "@components/index"
+
+
 
 export default function Home() {
 
   return (
     <div>
-        <Navbar brand="/logo/Logo.png"/>
+      <Hero/>
+      <Podcasts/>
+      <Article/>
     </div>
   )
 }

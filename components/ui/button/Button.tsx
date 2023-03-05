@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 type ButtonProps = {
-
+    buttonText:string
 };
 
-const Button:React.FC<ButtonProps> = () => {
+const Button:FC<ButtonProps> = ({buttonText}) => {
 
-    return <div>Have a good coding</div>
+    return (
+        <button className="bg-primary text-white py-2 px-8  text-xl leading-[24px] hover:bg-blue-600">
+        {buttonText}
+      </button>
+    )
 }
 export default Button;

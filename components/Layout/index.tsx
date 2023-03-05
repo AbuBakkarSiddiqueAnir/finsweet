@@ -1,22 +1,24 @@
 
 
-import {FC, ReactElement} from 'react';
+import { FC, ReactElement } from 'react';
+import { Navbar } from '@components/index';
+import {Footer} from  '@components/index';
 
 type LayoutProps = {
     children: ReactElement
 };
 
-const Layout:React.FC<LayoutProps> = ({ children }) => {
+const Layout:FC<LayoutProps> = ({ children }) => {
 
     return (
-        <div>
+        <>
+            <Navbar brand="/logo/Logo.png"/>
+            <main className='container mx-auto p-4'>
 
-
-        <main className='fit'>
-
-            {children}
-        </main>
-        </div>
+                {children}
+            </main>
+            <Footer brand="/logo/brand-white.png"/>
+        </>
     )
 }
 export default Layout;
