@@ -1,6 +1,6 @@
 import { AppProps } from "next/app"
 import { FC } from 'react';
-import "@assets/main.css"
+import "../styles/globals.css"
 import Layout from '../components/Layout/index';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {

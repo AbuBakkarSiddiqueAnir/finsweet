@@ -1,11 +1,11 @@
 
-import Navbar from '../components/common/navbar/Navbar';
+import { Navbar } from "@components/index"
 
 export default function Home() {
 
   return (
     <div>
-        <Navbar/>
+        <Navbar brand="/logo/Logo.png"/>
     </div>
   )
 }
