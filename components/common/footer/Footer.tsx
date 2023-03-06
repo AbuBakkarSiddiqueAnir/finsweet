@@ -3,6 +3,7 @@
 
 
 
+import Sponsors from '@components/ui/Sponsors';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -14,7 +15,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ brand }) => {
 
     return (
-        <footer className="bg-base pt-12 ">
+        <footer className="bg-base pt-12 relative">
             <div className="max-w-7xl mx-auto pt-[192px] pb-[96px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="col-span-1">
                 <Image width={130} height={26} alt='logo' src={brand} />
@@ -46,6 +47,13 @@ const Footer: React.FC<FooterProps> = ({ brand }) => {
             <div className="  text-center bg-primary py-6 text-secondary">
             © Copyright Finsweet 2021
             </div>
+            <div className='absolute -top-[200px] w-full'>
+                <div>
+                <Sponsors/>
+                </div>
+
+            </div>
+
         </footer>
     )
 
