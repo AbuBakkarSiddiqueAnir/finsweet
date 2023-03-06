@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
-interface ArticleCardProps {
-    article: { id: 'string'; title: 'string'; description: 'string'; image: 'string'; type: 'string' };
+export interface ArticleCardProps {
+    article: { id: string; title: string; description: string; image: string; type: string };
 };
 
 const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
