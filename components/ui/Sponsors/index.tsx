@@ -1,12 +1,8 @@
 
 import Image from 'next/image';
-import React from 'react';
+import React, { FC } from 'react';
 
-type SponsorsProps = {
-
-};
-
-const Sponsors:React.FC<SponsorsProps> = () => {
+const Sponsors:FC = () => {
 
     return (
         <section className="bg-primary  max-w-7xl mx-auto py-8 md:py-[72px]">
