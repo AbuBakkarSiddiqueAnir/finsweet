@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
@@ -10,7 +9,7 @@ export interface ArticleCardProps {
 
 const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
 
-    const { id, title, description, image, type } = article
+    const {title, description, image, type } = article
 
     return (
         <article className="container mx-auto cursor-pointer hover:border-1">
@@ -26,7 +25,6 @@ const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
                         />
                     </div>
                     <div className="pt-8">
-
                         <a
                             href="#"
                             className="block mt-1 text-[24px] leading-[36px] font-medium text-base hover:underline"
@@ -57,8 +55,6 @@ const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
                                     </>
                                 )
                             }
-
-
                         </div>
                     </div>
                 </div>

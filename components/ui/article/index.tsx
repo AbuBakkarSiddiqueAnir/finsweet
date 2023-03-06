@@ -1,12 +1,8 @@
 
-
 import React, { FC } from 'react';
-import Image from 'next/image';
 import Button from '../button/Button';
 import { Episodes } from './../../../lib/data';
 import ArticleCard from './articleCard';
-
-
 
 const Article: FC = () => {
 
@@ -21,22 +17,16 @@ const Article: FC = () => {
                     <div className='flex flex-start md:self-end'>
                         <Button buttonText='See All Episiodes' />
                     </div>
-
-
                 </header>
-
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                     {
-                        Episodes.map((article, i)=>{
+                        Episodes.map((article, i) => {
                             return (
-                                <ArticleCard key={article.id} article={article}/>
+                                <ArticleCard key={article.id} article={article} />
                             )
                         })
                     }
                 </div>
-
-
-
             </div>
         </>
     )

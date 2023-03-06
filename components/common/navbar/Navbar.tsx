@@ -16,7 +16,6 @@ const Navbar: React.FC<NavbarProps> = ({ brand }) => {
             <Link href='/'>
             <Image width={130} height={26} alt='logo' src={brand} />
             </Link>
-
           </div>
           <div className="ml-10 flex items-baseline space-x-4">
             <Link href="/about" className="text-base text-lg font-base">About</Link>

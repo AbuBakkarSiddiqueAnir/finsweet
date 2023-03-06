@@ -1,8 +1,4 @@
 
-
-
-
-
 import Sponsors from '@components/ui/Sponsors';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,7 +15,6 @@ const Footer: React.FC<FooterProps> = ({ brand }) => {
             <div className="max-w-7xl mx-auto pt-[160px] md:pt-[192px] pb-8 md:pb-[96px] px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="col-span-1">
                     <Image width={130} height={26} alt='logo' src={brand} />
-
                 </div>
                 <div className="col-span-1">
                     <h3 className="text-white text-[20px] leading-[30px] font-bold mb-8">Pages</h3>
@@ -35,7 +30,6 @@ const Footer: React.FC<FooterProps> = ({ brand }) => {
                     <ul>
                         <li className='mb-4'><Link href="/contact" className="text-secondary  hover:text-white">Contact</Link></li>
                         <li className='mb-4'><Link href="/about" className="text-secondary  hover:text-white">About</Link></li>
-
                     </ul>
                 </div>
                 <div className="col-span-1">
@@ -61,11 +55,9 @@ const Footer: React.FC<FooterProps> = ({ brand }) => {
                                 <Image width={182} height={32} alt='spotify' className='h-8 w-[130px]' src='/images/spo.png' />
                             </Link>
                         </li>
-
                     </ul>
                 </div>
             </div>
-
             <div className="  text-center bg-primary py-6 text-secondary">
                 © Copyright Finsweet 2021
             </div>
@@ -73,9 +65,7 @@ const Footer: React.FC<FooterProps> = ({ brand }) => {
                 <div>
                     <Sponsors />
                 </div>
-
             </div>
-
         </footer>
     )
 
