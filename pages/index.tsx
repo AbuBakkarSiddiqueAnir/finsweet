@@ -1,5 +1,5 @@
 
-import { Hero, Podcasts, Article } from "@components/index"
+import { Hero, Podcasts, Article, Blog } from "@components/index"
 
 
 
@@ -10,6 +10,7 @@ export default function Home() {
       <Hero/>
       <Podcasts/>
       <Article/>
+      <Blog/>
     </div>
   )
 }

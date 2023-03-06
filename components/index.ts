@@ -11,3 +11,5 @@ export {default as Podcasts} from './ui/podcasts'
 export {default as Button} from './ui/button/Button'
 
 export {default as Article} from './ui/article'
+
+export {default as Blog} from './ui/blog'
