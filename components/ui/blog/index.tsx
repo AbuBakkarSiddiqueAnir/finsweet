@@ -12,7 +12,7 @@ const Blog: FC = () => {
 
     return (
         <>
-            <div className='max-w-7xl mx-auto  sm:px-6 lg:px-8  py-12 px-10 gap-2 flex flex-col justify-between  items-center'>
+            <div className='max-w-7xl mx-auto  sm:px-6 lg:px-8  py-12 px-6 gap-2 flex flex-col mb-[210px] md:mb-[313px] justify-between  items-center'>
 
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>

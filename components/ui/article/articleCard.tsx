@@ -13,12 +13,12 @@ const ArticleCard: FC<ArticleCardProps> = ({ article }) => {
     const { id, title, description, image, type } = article
 
     return (
-        <article className="container mx-auto px-4 cursor-pointer hover:border-1">
-            <div className="max-w-md mx-auto bg-white     overflow-hidden md:max-w-2xl">
+        <article className="container mx-auto cursor-pointer hover:border-1">
+            <div className=" mx-auto bg-white     overflow-hidden md:max-w-2xl">
                 <div className="">
                     <div className="md:flex-shrink-0">
                         <Image
-                            className="h-48 w-full object-cover "
+                            className="w-full object-cover"
                             src={image}
                             width={100}
                             height={100}

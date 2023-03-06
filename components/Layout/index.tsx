@@ -13,7 +13,7 @@
         return (
             <>
                 <Navbar brand="/logo/Logo.png"/>
-                <main className='container mx-auto p-4'>
+                <main className='container mx-auto '>
 
                     {children}
                 </main>

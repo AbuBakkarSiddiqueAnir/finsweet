@@ -12,13 +12,13 @@ const Article: FC = () => {
 
     return (
         <>
-            <div className='max-w-7xl mx-auto  sm:px-6 lg:px-8  py-12 px-10 gap-2 flex flex-col justify-between  items-center'>
-                <header className='flex justify-between w-full mb-[64px]'>
+            <div className='max-w-7xl mx-auto  sm:px-6 lg:px-8  py-12 px-6 gap-2 flex flex-col justify-between  items-center'>
+                <header className='flex items-center gap-4 md:justify-between md:flex-row flex-col w-full mb-[64px]'>
                     <div>
-                        <h3 className='title-sm font-bold text-base mb-[16px]'>Recent Episodes</h3>
-                        <p className='max-w-[371px] text-lg leading-[22px] text-base'>Apparently we had reached a great height in the atmosphere, for the sky was a dead black.</p>
+                        <h3 className='title-sm font-bold text-base mb-[16px] md:text-start text-center'>Recent Episodes</h3>
+                        <p className='max-w-[371px] text-lg leading-[22px] text-base text-center md:text-start'>Apparently we had reached a great height in the atmosphere, for the sky was a dead black.</p>
                     </div>
-                    <div className='flex self-end'>
+                    <div className='flex flex-start md:self-end'>
                         <Button buttonText='See All Episiodes' />
                     </div>
 
